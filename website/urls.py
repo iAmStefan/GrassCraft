@@ -9,3 +9,8 @@ urlpatterns = [
     path('404/', views.error404, name='eroare'),
     path('cereri-staff/', views.sendmail, name='sendmail'),
 ]
+
+if not settings.DEBUG:
+    urlpatterns += patterns('',
+        ('static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+    )
