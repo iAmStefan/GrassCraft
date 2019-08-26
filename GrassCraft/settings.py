@@ -32,7 +32,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'taloistefanel8@gmail.com'
 EMAIL_HOST_PASSWORD = 'nvhscmqlgkhggzcy'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'https://grass-craft.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'grass-craft.herokuapp.com/']
 
 
 # Application definition
