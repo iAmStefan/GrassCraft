@@ -1,1 +1,1 @@
-web: gunicorn GrassCraft.wsgi:website --log-file -
+web: gunicorn GrassCraft:website
