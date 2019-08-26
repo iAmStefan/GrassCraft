@@ -1,1 +1,1 @@
-web: gunicorn GrassCraft:static
+web: gunicorn GrassCraft:website
