@@ -1,1 +1,1 @@
-web: gunicorn GrassCraft:GrassCraft
+web: gunicorn GrassCraft:wsgi
