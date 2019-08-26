@@ -1,1 +1,1 @@
-web: gunicorn GrassCraft:website
+web: gunicorn app:app --log-file
