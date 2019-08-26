@@ -1,0 +1,106 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GrassCraft | Cereri Staff</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/staffStyle.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/icon.ico' %}" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+       <div class="menu">
+          <ul>
+            <li><a href="{% url 'index' %}">Acasa</a></li>
+            <li><a href="{% url 'regulament' %}">Regulament</a></li>
+            <li class="active"><a href="{% url 'staffRequests' %}">Cereri</a></li>
+          </ul>
+          <div class="logo">
+            <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="requests">
+      <br></br><br></br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="discord">
+              <iframe src="https://discordapp.com/widget?id=611663689665478696&theme=dark" width="399" height="539" allowtransparency="true" frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cereri">
+              <div class="title">Cereri</div>
+              <div class="formular">
+                  <form action="{% url 'sendmail' %}" method="POST">
+                      <div class="form-group">
+                          <div class="grad">Tip cerere</div>
+                          <select class="gradeList" name="cereri">
+                              <option value="admin" name=" {{ form.admin }}">Admin</option>
+                              <option value="helper" name=" {{ form.helper }}">Helper</option>
+                              <option value="builder" name="{{ form.builder }}">Builder</option>
+                              <option value="recover" name="{{ form.recover }}">Recuperare parola</option>
+                          </select>
+                          <p class="universal">Numele de pe serverul de Minecraft</p>
+                          {{ form.server_name }}
+
+                          <p class="adresa">Adresa de e-mail</p>
+                          {{ form.email_adress }}
+
+                          <p class="adminLabel q1">Ce faci daca cineva face reclama la canal de Youtube ?</p>
+                          {{ form.admin_q1 }}
+
+                          <p class="adminLabel q2">Ce faci daca cineva face abuz de /helpop ?</p>
+                          {{ form.admin_q2 }}
+
+                          <p class="adminLabel q3">Ce faci daca cineva foloseste hack/cheat ?</p>
+                          {{ form.admin_q3 }}
+
+                          <p class="adminLabel q4">Ce faci daca cineva face reclama la un server de Minecraft ?</p>
+                          {{ form.admin_q4 }}
+
+                          <p class="helperLabel q1">Cat timp se da mute la limbaj licentios ?</p>
+                          {{ form.helper_q1 }}
+
+                          <p class="helperLabel q2">Dovada cu orele jucate {minim 20 ore}</p>
+                          {{ form.helper_q2 }}
+
+                          <p class="helperLabel q3">Daca ajungi helper cum vei ajuta serverul ?</p>
+                          {{ form.helper_q3 }}
+
+                          <p class="builderLabel q1">Cat timp ai stat cel mai mult la o constructie ?</p>
+                          {{ form.builder_q1 }}
+
+                          <p class="builderLabel q2">Poza cu niste constructii</p>
+                          {{ form.builder_q2 }}
+
+                          <p class="builderLabel q3">Daca ai fi un animal ce animal ai fi ?</p>
+                          {{ form.builder_q3 }}
+
+                          <p class="recoverLabel q1">Poza cu numele pe server</p>
+                          {{ form.recover_q1 }}
+
+                          <p class="recoverLabel q2">Numele de discord</p>
+                          {{ form.recover_q2 }}
+
+                          <p class="recoverLabel q3">Data pierderii parolei</p>
+                          {{ form.recover_q3 }}
+                          {% csrf_token %}
+                      </div>
+                      <button type="submit" class="emailSender">Trimite cererea</button>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="{% static 'javascript/staffReq.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GrassCraft | Acasa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/indexStyle.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/icon.ico' %}" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+       <div class="menu">
+          <ul>
+            <li class="active"><a href="{% url 'index' %}">Acasa</a></li>
+            <li><a href="{% url 'regulament' %}">Regulament</a></li>
+            <li><a href="{% url 'staffRequests' %}">Cereri</a></li>
+          </ul>
+          <div class="logo">
+            <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="owners">
+      <br></br><br></br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="owner">
+            <div class="title">Detinatorul serverului</div>
+              <image src="{% static 'images/owner.png' %}" class="text-center">
+              <div class="description1">
+                Buna, ma numesc Sebastian si am 13 ani. Am decis sa deschid acest server pentru a face o comunitate unita care sa fie top#1 in serverele de creative roleplay din Romania. Daca aveti intrebari ma puteti contacta pe discord Mr_SebPaY#5195 sau pe adresa de e-mail seby04911@gmail.com.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="informatii">
+                <div class="title">Informatii</div>
+                <div class="description2">
+                  <p class="welcome">Bine ai venit pe serverul GrassCraftRo!<p>
+                  <p class="founder">Acest server a fost infiintat de Mr_SebPaY</p>
+                  <p class="contact">Ne puteti contacta pe discord: Mr_SebPaY#5195</p>
+                  <p class="openTime">Serverul este deschis zilnic de dimineata pana seara { Orele 6 pana la orele 2-3 noaptea }
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
