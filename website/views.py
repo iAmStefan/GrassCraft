@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.core.mail import send_mail
 from .forms import ContactForm
 
