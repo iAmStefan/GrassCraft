@@ -13,12 +13,12 @@
       <div class="row">
        <div class="menu">
           <ul>
-            <li><a href="{% url 'index' %}">Acasa</a></li>
-            <li><a href="{% url 'regulament' %}">Regulament</a></li>
-            <li class="active"><a href="{% url 'staffRequests' %}">Cereri</a></li>
+            <li alt="grass-craft home section" title="grass-craft home section"><a href="{% url 'index' %}">Acasa</a></li>
+            <li alt="grass-craft rules section" title="grass-craft rules section"><a href="{% url 'regulament' %}">Regulament</a></li>
+            <li alt="grass-craft staff requests section" title="grass-craft staff requests section" class="active"><a href="{% url 'staffRequests' %}">Cereri</a></li>
           </ul>
           <div class="logo">
-            <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}"></a>
+            <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" title="grass-craft logo menu" alt="grass-craft logo menu"></a>
           </div>
         </div>
       </div>
@@ -30,69 +30,69 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="discord">
-              <iframe src="https://discordapp.com/widget?id=611663689665478696&theme=dark" width="399" height="539" allowtransparency="true" frameborder="0"></iframe>
+              <iframe src="https://discordapp.com/widget?id=611663689665478696&theme=dark" width="399" height="539" allowtransparency="true" frameborder="0" title="grass-craft discord" alt="grass-craft discord"></iframe>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="cereri">
-              <div class="title">Cereri</div>
+              <div class="title" title="grass-craft applications" alt="grass-craft applications">Cereri</div>
               <div class="formular">
                   <form action="{% url 'sendmail' %}" method="POST">
                       <div class="form-group">
                           <div class="grad">Tip cerere</div>
                           <select class="gradeList" name="cereri">
-                              <option value="admin" name=" {{ form.admin }}">Admin</option>
-                              <option value="helper" name=" {{ form.helper }}">Helper</option>
-                              <option value="builder" name="{{ form.builder }}">Builder</option>
-                              <option value="recover" name="{{ form.recover }}">Recuperare parola</option>
+                              <option value="admin" name=" {{ form.admin }}" title="grass-craft admin application" alt="grass-craft admin application">Admin</option>
+                              <option value="helper" name=" {{ form.helper }}" title="grass-craft admin application" alt="grass-craft helper application">Helper</option>
+                              <option value="builder" name=" {{ form.builder }}" title="grass-craft builder application" alt="grass-craft builder application">Builder</option>
+                              <option value="recover" name=" {{ form.recover }}" title="grass-craft recovering application" alt="grass-craft recovering application">Recuperare parola</option>
                           </select>
-                          <p class="universal">Numele de pe serverul de Minecraft</p>
+                          <p class="universal" title="grass-craft server name field application" alt="grass-craft server name field">Numele de pe serverul de Minecraft</p>
                           {{ form.server_name }}
 
-                          <p class="adresa">Adresa de e-mail</p>
+                          <p class="adresa" title="grass-craft e-mail adress field" alt="grass-craft e-mail adress field">Adresa de e-mail</p>
                           {{ form.email_adress }}
 
-                          <p class="adminLabel q1">Ce faci daca cineva face reclama la canal de Youtube ?</p>
+                          <p class="adminLabel q1" title="grass-craft ad rule field" alt="grass-craft ad rule field">Ce faci daca cineva face reclama la canal de Youtube ?</p>
                           {{ form.admin_q1 }}
 
-                          <p class="adminLabel q2">Ce faci daca cineva face abuz de /helpop ?</p>
+                          <p class="adminLabel q2" title="grass-craft abuse rule field" alt="grass-craft abuse rule field">Ce faci daca cineva face abuz de /helpop ?</p>
                           {{ form.admin_q2 }}
 
-                          <p class="adminLabel q3">Ce faci daca cineva foloseste hack/cheat ?</p>
+                          <p class="adminLabel q3" title="grass-craft cheating rule field" alt="grass-craft cheating rule field">Ce faci daca cineva foloseste hack/cheat ?</p>
                           {{ form.admin_q3 }}
 
-                          <p class="adminLabel q4">Ce faci daca cineva face reclama la un server de Minecraft ?</p>
+                          <p class="adminLabel q4" title="grass-craft server ad rule field" alt="grass-craft server ad rule field">Ce faci daca cineva face reclama la un server de Minecraft ?</p>
                           {{ form.admin_q4 }}
 
-                          <p class="helperLabel q1">Cat timp se da mute la limbaj licentios ?</p>
+                          <p class="helperLabel q1" title="grass-craft server insult rule field" alt="grass-craft server insult rule field">Cat timp se da mute la limbaj licentios ?</p>
                           {{ form.helper_q1 }}
 
-                          <p class="helperLabel q2">Dovada cu orele jucate {minim 20 ore}</p>
+                          <p class="helperLabel q2" title="grass-craft server played hours proof field" alt="grass-craft server played hours proof field">Dovada cu orele jucate {minim 20 ore}</p>
                           {{ form.helper_q2 }}
 
-                          <p class="helperLabel q3">Daca ajungi helper cum vei ajuta serverul ?</p>
+                          <p class="helperLabel q3" title="grass-craft server helping field" alt="grass-craft server helping field">Daca ajungi helper cum vei ajuta serverul ?</p>
                           {{ form.helper_q3 }}
 
-                          <p class="builderLabel q1">Cat timp ai stat cel mai mult la o constructie ?</p>
+                          <p class="builderLabel q1" title="grass-craft building time field" alt="grass-craft building time field">Cat timp ai stat cel mai mult la o constructie ?</p>
                           {{ form.builder_q1 }}
 
-                          <p class="builderLabel q2">Poza cu niste constructii</p>
+                          <p class="builderLabel q2" title="grass-craft building photo field" alt="grass-craft building photo field">Poza cu niste constructii</p>
                           {{ form.builder_q2 }}
 
-                          <p class="builderLabel q3">Daca ai fi un animal ce animal ai fi ?</p>
+                          <p class="builderLabel q3" title="grass-craft animal question field" alt="grass-craft animal question field">Daca ai fi un animal ce animal ai fi ?</p>
                           {{ form.builder_q3 }}
 
-                          <p class="recoverLabel q1">Poza cu numele pe server</p>
+                          <p class="recoverLabel q1" title="grass-craft server name photo field" alt="grass-craft server name photo field">Poza cu numele pe server</p>
                           {{ form.recover_q1 }}
 
-                          <p class="recoverLabel q2">Numele de discord</p>
+                          <p class="recoverLabel q2" title="grass-craft discord name field" alt="grass-craft discord name field">Numele de discord</p>
                           {{ form.recover_q2 }}
 
-                          <p class="recoverLabel q3">Data pierderii parolei</p>
+                          <p class="recoverLabel q3" title="grass-craft password loosing date field" alt="grass-craft password loosing date field">Data pierderii parolei</p>
                           {{ form.recover_q3 }}
                           {% csrf_token %}
                       </div>
-                      <button type="submit" class="emailSender">Trimite cererea</button>
+                      <button type="submit" class="emailSender" title="grass-craft application sending" alt="grass-craft application sending">Trimite cererea</button>
                   </form>
               </div>
             </div>
