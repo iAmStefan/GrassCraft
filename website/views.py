@@ -16,11 +16,6 @@ def staffRequests(request):
 def error404(request):
     return render(request, '404.html')
 
-def handler404(request):
-    return render(request, '404.html', status=404)
-def handler500(request):
-    return render(request, '404.html', status=500)
-
 def sendmail(request):
     print('Campurile trebuie completate')
     if request.method == "POST":

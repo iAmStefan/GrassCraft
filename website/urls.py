@@ -7,7 +7,5 @@ urlpatterns = [
     path('regulament/', views.rules, name='regulament'),
     path('cereri-staff/', views.staffRequests, name='staffRequests'),
     path('cereri-staff/', views.sendmail, name='sendmail'),
+    path('404/', views.error404, name='error'),
 ]
-
-handler404 = views.handler404
-handler500 = views.handler500
