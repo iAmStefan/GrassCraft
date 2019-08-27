@@ -9,4 +9,5 @@ urlpatterns = [
     path('cereri-staff/', views.sendmail, name='sendmail'),
 ]
 
-handler404 = 'views.handler404'
+handler404 = views.handler404
+handler500 = views.handler500
