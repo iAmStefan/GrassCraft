@@ -1,130 +1,130 @@
-html,body{
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(to right, #0000ff 2%, #ff5050 84%);
-}
+  html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #0000ff 2%, #ff5050 84%);
+  }
 
-/*Meniu */
-.menu {
-  padding: 5px 0;
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  z-index: 100;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  border-bottom: 1px solid black;
-}
-.menu ul{
-  float: right;
-}
-.menu ul li{
-  list-style-type: none;
-  display: inline-block;
-  margin-top: 15px;
-  margin-right: 50px;
-  text-align: center;
-  position: relative;
-}
-.menu ul li  a{
-  letter-spacing: 2px;
-  margin-top: 5px;
-  text-decoration: none;
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.menu li.active a {
-  border-bottom: 2px solid #FB1401;
-  color: #646166;
-}
-.menu ul li a:hover{
-  border-bottom: 2px solid #FB1401;
-}
-.logo img{
-  float:left;
-  margin-left: 5px;
-  height: 51px;
-  width: 60px;
-}
-.menu ul li.active a {
-  border-bottom: 2px solid #FB1401;
-  color: #0189FB;
-}
+  /*Meniu */
+  .menu {
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    border-bottom: 1px solid black;
+  }
+  .menu ul{
+    float: right;
+  }
+  .menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 50px;
+    text-align: center;
+    position: relative;
+  }
+  .menu ul li  a{
+    letter-spacing: 2px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .menu li.active a {
+    border-bottom: 2px solid #FB1401;
+    color: #646166;
+  }
+  .menu ul li a:hover{
+    border-bottom: 2px solid #FB1401;
+  }
+  .logo img{
+    float:left;
+    margin-left: 5px;
+    height: 51px;
+    width: 60px;
+  }
+  .menu ul li.active a {
+    border-bottom: 2px solid #FB1401;
+    color: #0189FB;
+  }
 
-.col-lg-6{
-  text-align: center;
-}
-.owners{
-  height: 100%;
-  width: 100%;
-}
-.owner{
-  display:inline-block;
-  border: 1px solid black;
-  height: 535px;
-  width: 400px;
-  background-color: white;
-}
-.owner .title{
-  border-bottom: 1px solid black;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.owner img{
-  margin-top: 70px;
-  width: 120px;
-  height: 120px;
-}
-.description1{
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 5px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-.informatii{
-  display:inline-block;
-  border: 1px solid black;
-  height: 535px;
-  width: 400px;
-  background-color: white;
-}
-.informatii .title{
-  border-bottom: 1px solid black;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.description2 .welcome{
-  margin-top: 70px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin-bottom: 35px;
-}
-.description2 .founder{
-  margin-top: 5px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin-bottom: 35px;
-}
-.description2 .contact{
-  margin-top: 5px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin-bottom: 35px;
-}
-.description2 .openTime{
-  margin-top: 5px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
+  .col-lg-6{
+    text-align: center;
+  }
+  .owners{
+    height: 100%;
+    width: 100%;
+  }
+  .owner{
+    display:inline-block;
+    border: 1px solid black;
+    height: 535px;
+    width: 400px;
+    background-color: white;
+  }
+  .owner .title{
+    border-bottom: 1px solid black;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .owner img{
+    margin-top: 70px;
+    width: 120px;
+    height: 120px;
+  }
+  .description1{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .informatii{
+    display:inline-block;
+    border: 1px solid black;
+    height: 535px;
+    width: 400px;
+    background-color: white;
+  }
+  .informatii .title{
+    border-bottom: 1px solid black;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .description2 .welcome{
+    margin-top: 70px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+  }
+  .description2 .founder{
+    margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+  }
+  .description2 .contact{
+    margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+  }
+  .description2 .openTime{
+    margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
