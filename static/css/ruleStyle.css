@@ -65,7 +65,7 @@ html,body{
   .reguli{
     background-color: white;
     width: auto;
-    height: auto;
+    height: 535px;
     border: 1px solid black;
   }
   .reguli .title{
@@ -81,6 +81,9 @@ html,body{
   }
   .list p:first-child{
     padding-top: 60px;
+  }
+  .list p:last-child{
+    margin-bottom: 60px;
   }
   .staffRules{
     text-align: left;
