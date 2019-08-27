@@ -28,6 +28,6 @@ def sendmail(request):
         send_mail(
         "Aplicatie pentru administrator",
         message,
-        settings.EMAIL_HOST_USER,
-        [ContactForm.email_adress])
+        ContactForm.email_adress,
+        [settings.EMAIL_HOST_USER])
     return render(request, 'staff.html')
