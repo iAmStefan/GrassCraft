@@ -3,7 +3,7 @@ html,body{
     width: 100%;
     background: linear-gradient(to right, #0000ff 2%, #ff5050 84%);
   }
-  
+
   /*Meniu */
   .menu {
     padding: 5px 0;
@@ -73,13 +73,14 @@ html,body{
     border: 1px solid black;
     height: 540px;
     width: 400px;
-    background-color: #EF092F;
+    background-color: #FF3434;
   }
   .cereri .title{
     border-bottom: 1px solid black;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     letter-spacing: 2px;
+    color: white;
   }
   .gradeList{
     width: 97%;

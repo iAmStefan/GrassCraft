@@ -63,16 +63,18 @@ html,body{
     text-align: center;
   }
   .reguli{
-    background-color: white;
+    background-color: #FF3434;
     width: auto;
     height: 535px;
     border: 1px solid black;
+    color: white;
   }
   .reguli .title{
     border-bottom: 1px solid black;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     letter-spacing: 2px;
+    color: white;
   }
   .list p{
     padding-top: 20px;
