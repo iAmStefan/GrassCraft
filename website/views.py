@@ -25,5 +25,7 @@ def sendmail(request):
         "Aplicatie pentru administrator",
         message,
         ContactForm.email_adress,
-        [settings.EMAIL_HOST_USER])
+        [settings.EMAIL_HOST_USER],
+        fail_silently= False,
+        )
     return render(request, 'staff.html', {'form': form})
