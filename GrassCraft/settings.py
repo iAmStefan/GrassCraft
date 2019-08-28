@@ -31,6 +31,8 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'taloistefanel8@gmail.com'
 EMAIL_HOST_PASSWORD = 'nvhscmqlgkhggzcy'
+DEFAULT_FROM_EMAIL = 'taloistefanel8@gmail.com'
+SERVER_EMAIL = 'taloistefanel8@gmail.com'
 
 ALLOWED_HOSTS = ["*"]
 
