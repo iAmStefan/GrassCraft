@@ -6,6 +6,6 @@ urlpatterns = [
     path('informatii/', views.informations, name='informatii'),
     path('regulament/', views.rules, name='regulament'),
     path('cereri-staff/', views.staffRequests, name='staffRequests'),
-    path('cereri-staff/', views.sendmail, name='sendmail'),
+    path('sendmail', views.sendmail, name='sendmail'),
     path('404/', views.error404, name='error'),
 ]

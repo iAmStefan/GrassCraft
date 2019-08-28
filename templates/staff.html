@@ -91,8 +91,8 @@
                           <p class="recoverLabel q3" title="grass-craft password loosing date field" alt="grass-craft password loosing date field">Data pierderii parolei</p>
                           {{ form.recover_q3 }}
                           {% csrf_token %}
+                          <button type="submit" class="emailSender" title="grass-craft application sending" alt="grass-craft application sending" onclick="{% url 'sendmail' %}">Trimite cererea</button>
                       </div>
-                      <button type="submit" class="emailSender" title="grass-craft application sending" alt="grass-craft application sending">Trimite cererea</button>
                   </form>
               </div>
             </div>

@@ -1,10 +1,7 @@
 from django import forms
 
 class ContactForm(forms.Form):
-    admin = "admin"
-    helper = "helper"
-    builder = "builder"
-    recover = "recover"
+
     server_name = forms.CharField(required= False, label = "Numele de pe serverul de Minecraft", widget = forms.TextInput(attrs = {'class' : 'serverName'}))
     email_adress = forms.EmailField(required = False, label = "Adresa de e-mail", widget = forms.EmailInput(attrs = {'class' : 'emailAddress'}))
     admin_q1 = forms.CharField(required= False, label = "Ce faci daca cineva face reclama la canal de Youtube ?", widget = forms.TextInput(attrs = {'class' : 'admin'}))
