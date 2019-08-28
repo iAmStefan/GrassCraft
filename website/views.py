@@ -12,8 +12,7 @@ def rules(request):
     return render(request, 'rules.html')
 def staffRequests(request):
     form = ContactForm()
-    if form.is_valid():
-        return render(request, 'staff.html', {'form': form})
+    return render(request, 'staff.html', {'form': form})
 def error404(request):
     return render(request, '404.html')
 
