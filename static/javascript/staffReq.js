@@ -8,9 +8,12 @@ $(function(){
             $(".adminLabel").show();
             $(".admin").show();
             $(".helperLabel").hide();
+            $(".helper_Q2[type='file']").hide().prop('required',false);
+            $(".recover_Q1[type='file']").hide().prop('required',false);
             $(".helper").hide().prop('required',false);
             $(".builderLabel").hide();
             $(".builder").hide().prop('required',false);
+            $(".builder_Q2[type='file']").hide().prop('required',false);
             $(".recoverLabel").hide();
             $(".recover").hide().prop('required',false);
             $(".recover_Q1[type='file']").hide().prop('required',false);
@@ -26,6 +29,7 @@ $(function(){
             $(".helper_Q2[type='file']").show();
             $(".builderLabel").hide();
             $(".builder").hide().prop('required',false);
+            $(".builder_Q2[type='file']").hide().prop('required',false);
             $(".recoverLabel").hide();
             $(".recover").hide().prop('required',false);
             $(".recover_Q1[type='file']").hide().prop('required',false);

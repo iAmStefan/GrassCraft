@@ -73,7 +73,7 @@ html,body{
     border: 1px solid black;
     height: 540px;
     width: 400px;
-    background-color: #FF3434;
+    background-color: #E84141;
   }
   .cereri .title{
     border-bottom: 1px solid black;
@@ -85,6 +85,9 @@ html,body{
   .gradeList{
     width: 97%;
     height: 28px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #BFBFBF;
   }
   .grad {
     float: left;
@@ -109,15 +112,21 @@ html,body{
   .serverName {
     width: 97%;
     font-family: "Roboto", sans-serif;
+    border-radius: 3px;
+    border: 1px solid black;
   }
   .emailAddress{
     width: 97%;
     font-family: "Roboto", sans-serif;
+    border-radius: 3px;
+    border: 1px solid black;
   }
   .admin{
     margin-top: 5px;
     font-family: "Roboto", sans-serif;
     width: 97%;
+    border-radius: 3px;
+    border: 1px solid black;
   }
   .adminLabel{
     float: left;
@@ -154,16 +163,22 @@ html,body{
     width: 97%;
     font-family: "Roboto", sans-serif;
     display: none;
+    border-radius: 3px;
+    border: 1px solid black;
   }
   .builder {
     width: 97%;
     font-family: "Roboto", sans-serif;
     display: none;
+    border-radius: 3px;
+    border: 1px solid black;
   }
   .recover {
     width: 97%;
     font-family: "Roboto", sans-serif;
     display: none;
+    border-radius: 3px;
+    border: 1px solid black;
   }
   .helper_Q2[type="file"]{
     display: none;
@@ -175,7 +190,7 @@ html,body{
     display: none;
   }
   .emailSender{
-    margin-top: 5px;
+    margin-top: 10px;
     border: 1px solid black;
     background-color: dodgerblue;
     font-family: "Roboto", sans-serif;
