@@ -19,7 +19,7 @@ def error404(request):
 
 def sendmail(request):
     form = ContactForm()
-    server = smtplib.SMTP('smtp.gmail.com', 25)
+    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.connect("smtp.gmail.com", 465)
     server.ehlo()
     server.starttls()
