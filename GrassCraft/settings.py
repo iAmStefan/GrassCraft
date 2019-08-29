@@ -29,9 +29,9 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'GRASSCRAFT'
-EMAIL_HOST_PASSWORD = 'GrassTeam12@'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
 DEFAULT_FROM_EMAIL = ''
 SERVER_EMAIL = ''
 
