@@ -22,8 +22,6 @@ def sendmail(request):
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.connect("smtp.gmail.com", 465)
     server.ehlo()
-    server.starttls()
-    server.ehlo()
     server.login("taloistefanel8@gmail.com", "nvhscmqlgkhggzcy")
     server.sendmail(
       "from@address.com",
