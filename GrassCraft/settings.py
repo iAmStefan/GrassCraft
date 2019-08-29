@@ -29,8 +29,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'grass-craft'
-EMAIL_HOST_PASSWORD = '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'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
 
 ALLOWED_HOSTS = ["*"]
 
