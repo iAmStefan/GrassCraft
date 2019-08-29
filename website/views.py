@@ -20,6 +20,10 @@ def error404(request):
 def sendmail(request):
     form = ContactForm()
     server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.connect("smtp.gmail.com",465)
+    server.ehlo()
+    server.starttls()
+    server.ehlo()
     server.login("taloistefanel8@gmail.com", "nvhscmqlgkhggzcy")
     server.sendmail(
       "from@address.com",
