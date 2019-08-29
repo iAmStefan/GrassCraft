@@ -26,13 +26,11 @@ SECRET_KEY = '7@#@0g_4794nfcyxnzjf@mbman76k6xv=te)e$@6mti+=!d59*'
 DEBUG = True
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'taloistefanel8@gmail.com'
-EMAIL_HOST_PASSWORD = 'nvhscmqlgkhggzcy'
-DEFAULT_FROM_EMAIL = 'taloistefanel8@gmail.com'
-SERVER_EMAIL = 'taloistefanel8@gmail.com'
+EMAIL_HOST_USER = 'grass-craft'
+EMAIL_HOST_PASSWORD = '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'
 
 ALLOWED_HOSTS = ["*"]
 
