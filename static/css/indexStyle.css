@@ -102,7 +102,7 @@
     letter-spacing: 2px;
   }
   .description2 .welcome{
-    margin-top: 70px;
+    margin-top: 40px;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
@@ -127,4 +127,9 @@
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
+  }
+  .description2 img{
+    margin-top: 25px;
+    width: 370px;
+    height: 70px;
   }
