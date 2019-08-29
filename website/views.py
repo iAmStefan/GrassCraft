@@ -18,6 +18,7 @@ def error404(request):
     return render(request, '404.html')
 
 def sendmail(request):
+    form = ContactForm()
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.login("taloistefanel8@gmail.com", "nvhscmqlgkhggzcy")
     server.sendmail(
@@ -26,7 +27,6 @@ def sendmail(request):
       "this message is from python")
     server.quit()
     #print('Da')
-    #form = ContactForm()
     #if form.is_valid():
     #    message = ContactForm.server_name + " " + ContactForm.admin_q1 + " " + ContactForm.admin_q2 + " " + ContactForm.admin_q3 + " " + ContactForm.admin_q4
     #    send_mail(
