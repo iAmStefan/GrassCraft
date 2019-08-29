@@ -25,6 +25,7 @@ SECRET_KEY = '7@#@0g_4794nfcyxnzjf@mbman76k6xv=te)e$@6mti+=!d59*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_USE_TLS = True
