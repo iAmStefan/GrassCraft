@@ -53,3 +53,24 @@
     border-bottom: 2px solid #FB1401;
     color: #0189FB;
   }
+
+  .col-lg-12{
+    text-align: center;
+  }
+
+  .votare{
+    margin-top: 150px;
+    display: inline-block;
+  }
+  .votare p{
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: white;
+  }
+
+  .votare img{
+    margin-top: 25px;
+    width: 1000px;
+    height: 130px;
+  }
