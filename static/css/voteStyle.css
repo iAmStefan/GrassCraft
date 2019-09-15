@@ -1,0 +1,55 @@
+  html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #0000ff 2%, #ff5050 84%);
+  }
+
+  /*Meniu */
+  .menu {
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    border-bottom: 1px solid black;
+  }
+  .menu ul{
+    float: right;
+  }
+  .menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 50px;
+    text-align: center;
+    position: relative;
+  }
+  .menu ul li  a{
+    letter-spacing: 2px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .menu li.active a {
+    border-bottom: 2px solid #FB1401;
+    color: #646166;
+  }
+  .menu ul li a:hover{
+    border-bottom: 2px solid #FB1401;
+  }
+  .logo img{
+    float:left;
+    margin-left: 5px;
+    height: 51px;
+    width: 60px;
+  }
+  .menu ul li.active a {
+    border-bottom: 2px solid #FB1401;
+    color: #0189FB;
+  }

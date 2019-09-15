@@ -14,6 +14,8 @@ def rules(request):
 def staffRequests(request):
     form = ContactForm()
     return render(request, 'staff.html', {'form': form})
+def vote(request):
+    return render(request, 'vote.html')
 def error404(request):
     return render(request, '404.html')
 
