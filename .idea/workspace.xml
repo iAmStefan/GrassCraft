@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e0b36ec8-3834-44fa-b38c-f6a613e0850c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/indexStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/indexStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/voteStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/voteStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/vote.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vote.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +30,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FlashMcRo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
   </component>
@@ -111,6 +107,7 @@
       <workItem from="1567013019612" duration="120000" />
       <workItem from="1568565664295" duration="1128000" />
       <workItem from="1568568249083" duration="736000" />
+      <workItem from="1568988111360" duration="782000" />
     </task>
     <servers />
   </component>
